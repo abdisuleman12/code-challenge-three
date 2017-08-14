@@ -31,7 +31,7 @@ VALUES ('Cupcake', 'A delicious cupcake', '/assets/cupcake.jpg'),
 ### Base Mode
 Before we can launch, we at least need to be able to view and add new treats. Finish implementing the following routes in the `server/routes/treats.js` file:
 
-* GET call to `/treats` should return an array of treats (e.g. cupcakes, goldfish, etc) and their image URLs
+<><><><> * GET call to `/treats` should return an array of treats (e.g. cupcakes, goldfish, etc) and their image URLs
 
 * POST  call to `/treats` expects treat name, description and link to a url image in an object as follows:
 
