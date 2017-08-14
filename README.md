@@ -8,7 +8,7 @@ database. In fact, said developer even stubbed out most of your server-side code
 
 ## Database Setup
 
-Add the following table to your `antares` database:
+Create a `treats` database and add the following table to your database:
 
 ```SQL
 CREATE TABLE treats (
@@ -49,8 +49,8 @@ Before we can launch, we at least need to be able to view and add new treats. Fi
 - description: "Cold, yummy, and  belongs in my tummy!"
 - pic: "/assets/icecream.jpg"
 
-### Hard Mode
-Our client will be ecstatic if we can also deliver the ability to update and delete, but consider these "nice-to-haves".
+### Hard Mode 
+In the `toggle modes` section. Click the `Edit` button. Our client will be ecstatic if we can also deliver the ability to update and delete, but consider these "nice-to-haves".
 
 * PUT to `/treats/:id` updates the treat description
 
