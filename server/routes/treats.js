@@ -1,20 +1,10 @@
 var express = require("express");
 var router = express.Router();
-var pg = require("pg");
-
-var config = {
-  database: "antares", // name of your database
-  host: "localhost", //where is your database?
-  port: 5432, // port for the database
-  max: 10, // how many connections at one time
-  idleTimeoutMillis: 30000 //30 seconds to connect
-};
-
-var pool = new pg.Pool(config);
+var pool = require('../modules/pool');
 
 // GET /treats
 router.get('/', function (req, res) {
-  pool.connect(function (err, db, done) {
+  pool.connect(function (err, db, done) { // if you've used (errorConnectingToDatabase, client, done) then what does this change?
     if (err) {
       console.log('Error connecting to the DB', err);
       res.sendStatus( 500 );
